@@ -115,10 +115,30 @@ live link: https://shoppingdaveedgangi.netlify.app/
 frontend link : https://github.com/DaveedGangi/revistFrontend.git
 backend link: https://github.com/DaveedGangi/revistBackend.git
 
+app logo 
+![Screenshot 2025-04-13 103608](https://github.com/user-attachments/assets/1e36751e-77c5-4805-8d31-014b8a66883f)
+
+login page
+![Screenshot 2025-04-13 163759](https://github.com/user-attachments/assets/52f0fb29-9628-4bf7-a2c1-c951aa04cc32)
+
+dashboard
+![Screenshot 2025-04-13 163953](https://github.com/user-attachments/assets/a5bb4af8-ca37-46a1-a444-55c448f75909)
+
+dashboard added categories 
+![Screenshot 2025-04-13 164904](https://github.com/user-attachments/assets/1b96eed8-9ad7-4208-aeee-f3baced6a582)
+
+categories page 
+![Screenshot 2025-04-13 164924](https://github.com/user-attachments/assets/28b82b6f-f010-4880-bc81-97f9bba01fa6)
+
+logout page
+![Screenshot 2025-04-13 164936](https://github.com/user-attachments/assets/ce3afcc6-f275-48d6-ace3-dd0b4224fc46)
 
 
+edit page
+![Screenshot 2025-04-13 164957](https://github.com/user-attachments/assets/5948822e-3fa3-4ea9-8923-99898932ae33)
 
-
+delete page
+![Screenshot 2025-04-13 165019](https://github.com/user-attachments/assets/b3d7ef0c-0e52-4a28-9a60-c231331bc1dc)
 
 
 
