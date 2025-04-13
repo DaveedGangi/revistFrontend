@@ -9,7 +9,7 @@ function AddCategory(){
 
     const categoryAdd=async(e)=>{
         e.preventDefault();
-        console.log("h");
+    try{
         const api="https://revistbackenddaveedgangi.onrender.com/addcategory"
         const options={
             method:"POST",
@@ -28,6 +28,7 @@ function AddCategory(){
         const fetchAddCategory=await fetch(api,options);
         if(fetchAddCategory.ok){
             console.log("Added item successfully");
+            alert("Shopping category added successfully ")
             setTitle("");
             setImage("");
             setCategory("");
@@ -35,7 +36,14 @@ function AddCategory(){
         }
         else{
             console.log("failed to add item");
+            alert("Failed to add category")
         }
+
+    }
+    catch{
+        console.log("Error occured");
+        alert("Error occured during adding category");
+    }
 
     }
     return(

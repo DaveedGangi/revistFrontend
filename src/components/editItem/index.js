@@ -35,7 +35,7 @@ specificAPi()
 
 const categoryEdit=async(e)=>{
     e.preventDefault();
-    console.log("h");
+    try{
     const api=`https://revistbackenddaveedgangi.onrender.com/editcategory/${id}`
     const options={
         method:"PUT",
@@ -54,6 +54,7 @@ const categoryEdit=async(e)=>{
     const fetchEditCategory=await fetch(api,options);
     if(fetchEditCategory.ok){
         console.log("Edit item successfully");
+        alert("Edited shopping category successfully")
         setTitle("");
         setImage("");
         setCategory("");
@@ -61,7 +62,13 @@ const categoryEdit=async(e)=>{
     }
     else{
         console.log("failed to Edit item");
+        alert("Failed to edit shopping category")
     }
+}
+catch{
+    console.log("Error occured during fetching");
+    alert("Error occured");
+}
 
 }
 

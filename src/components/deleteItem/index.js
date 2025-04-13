@@ -7,7 +7,7 @@ function DeleteShoppingItem(){
     const categoryDelete=async(e)=>{
         e.preventDefault();
      
-
+    try{
         const api=`https://revistbackenddaveedgangi.onrender.com/deletecategory/${id}`
         const options={
             method:"DELETE",
@@ -17,13 +17,22 @@ function DeleteShoppingItem(){
         const fetchDeleteCategory=await fetch(api,options);
         if(fetchDeleteCategory.ok){
             console.log("Deleted item successfully");
+            alert("Deleted shopping category successfully");
             history.replace("/");
         
           
         }
         else{
             console.log("failed to Delete item");
+            alert("Failed to delete shopping category")
         }
+
+    }
+    catch{
+        console.log("error while deleting");
+        alert("Error occured");
+        
+    }
 
     }
 
