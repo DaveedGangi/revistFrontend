@@ -139,11 +139,14 @@
         width:64vw;
     }
     .add-category-section{
-        width:44vw;
+        width:33vw;
 
     }
     .form{
         width:300px;
+    }
+    .add-category-button{
+        width:120px;
     }
   
    
