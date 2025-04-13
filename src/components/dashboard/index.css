@@ -1,0 +1,125 @@
+
+.shopping-image{
+    height:44px;
+    width:100px;
+    padding-left:12px;
+    object-fit:cover;
+   
+}
+.search{
+    width:88px;
+    height:22px;
+   
+    background-color: black;
+    color: aliceblue;
+    outline: none;
+    border: 0px;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height:55px;
+    background-color: black;
+    color: aliceblue;
+    padding-right:14px;
+    box-sizing: border-box;
+    
+}
+.username-style{
+    background-color: brown;
+    color: aliceblue;
+    border-radius:5px;
+    font-weight: 600;
+    height:40px;
+    width: 40px;
+    border-radius: 23px;
+    outline: none;
+    border: 0px;
+    margin-right: 5px;
+    
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    
+}
+.left-side-nav-bar{
+    background-color: rgb(133, 85, 177);
+    color: rgb(227, 234, 239);
+
+    height:700px;
+    width:120px;
+    padding-left:17px;
+    padding-top: 44px;
+    font-weight: 600;
+  
+    
+}
+.links{
+    text-decoration: none;
+    color: aliceblue;
+    margin-top:22px;
+}
+.links:over{
+    color:rgb(103, 117, 117);
+    text-decoration: underline;
+}
+
+.showing-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:77vw;
+    padding:22px;
+
+}
+.empty-list-heading{
+    text-align: center;
+}
+.shopping-items{
+    padding:12px;
+}
+.shopping-item{
+    width:220px;
+    height:190px;
+    object-fit: cover;
+}
+.title{
+    font-weight: 600;
+    color:rgb(89, 82, 74);
+    padding-left: 14px;
+}
+.item-count{
+    color:rgb(35, 135, 102);
+    font-weight: 500;
+    padding-left:14px;
+}
+.shoppingList-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow: auto;
+    flex-wrap: wrap;
+
+}
+.item{
+    background-color: aliceblue;
+    box-shadow: 0px, 2px, 0px ,1px whitesmoke;
+    margin:4px;
+}
+@media (max-width:576px){
+    .left-side-nav-bar{
+        width: 90px;
+        padding-left:4px;
+    }
+    .showing-data{
+        width:54vw;
+    }
+   
+   
+}
