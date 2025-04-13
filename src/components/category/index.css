@@ -13,7 +13,6 @@
     margin-bottom:10px;
 }
 .add-category-section{
-    text-align: right;
     width: 88vw;
     text-align: right;
 }
@@ -23,11 +22,12 @@
     border: 0px;
     border-radius: 4px;
     margin-bottom: 4px;
-    margin-right:4px;
+    margin-right:16px;
     cursor: pointer;
     height:24px;
     width:65px;
     text-align: center;
+    margin-left:22px;
 }
 .delete-button{
     background-color: chocolate;

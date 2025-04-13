@@ -72,7 +72,7 @@ fetchingCategoriesApi();
         <div>
             <div className="nav-bar">
                 <div><img className="shopping-image" src="https://i.ibb.co/zV3KpYDM/Screenshot-2025-04-12-184112.png" alt="not-found"/>
-                 </div> <div><input className="search" type="search" placeholder="Search"/></div>
+                 </div>
                 <div className="name">
                     <Link to="/profile">
                     <button className="username-style">{username&&username[0]}</button>{username}
@@ -127,7 +127,7 @@ fetchingCategoriesApi();
             </div>
         </div>
 
-        
+
 
             }
         </div>

@@ -93,9 +93,9 @@ checkAuth()
             </div>
 
             <h1 className="logout-heading">Are you sure want to logout</h1>
-            
+            <div className="logout-space">
             <button className="logout-button" onClick={()=>logout()} type="button">Logout</button>
-
+            </div>
         </div>
     )
 }

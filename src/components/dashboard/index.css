@@ -2,8 +2,8 @@
 .shopping-image{
     height:44px;
     width:100px;
-    padding-left:12px;
     object-fit:cover;
+    padding-left:18px;
    
 }
 .search{
@@ -79,6 +79,7 @@
 }
 .empty-list-heading{
     text-align: center;
+    margin-top:38px;
 }
 .shopping-items{
     padding:12px;
@@ -133,6 +134,9 @@
         padding-left:4px;
         font-weight: 400;
         padding-right:4px;
+    }
+    .showing-data{
+        width:54vw;
     }
   
    
