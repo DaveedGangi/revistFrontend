@@ -55,6 +55,8 @@
     font-weight: 600;
     height:100%;
     min-height: 100vh;
+    max-height:300vh;
+    background-size: cover;
   
     
 }
@@ -71,9 +73,10 @@
 .showing-data{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width:88vw;
+    margin-bottom: 33px;
     
 
 }
@@ -130,7 +133,7 @@
 }
 @media (max-width:576px){
     .left-side-nav-bar{
-        width: 90px;
+        width: 100px;
         padding-left:4px;
         font-weight: 400;
         padding-right:4px;
