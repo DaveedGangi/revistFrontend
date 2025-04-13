@@ -3,10 +3,15 @@ import React,{useEffect,useState} from "react";
 
 import { useHistory,Link } from "react-router-dom";
 
+
+
+import {BarLoader} from "react-spinners";
+
 import "./index.css";
 function Category(){
     const[username,setUsername]=useState("");
     const[shoppingList,setShoppingList]=useState([]);
+      const[spinner,setSpinner]=useState(true);
 
     const history=useHistory()
 
@@ -50,6 +55,7 @@ const fetchingCategoriesApi=async()=>{
         const responseCategories=await fetchingCategories.json();
         console.log(responseCategories.categories);
         setShoppingList(responseCategories.categories)
+        setSpinner(false);
     }
 }
 fetchingCategoriesApi();
@@ -59,6 +65,10 @@ fetchingCategoriesApi();
 
 
     return(
+        <div>
+            {
+                  spinner?<div className="spinner"><BarLoader /></div>:
+         
         <div>
             <div className="nav-bar">
                 <div><img className="shopping-image" src="https://i.ibb.co/zV3KpYDM/Screenshot-2025-04-12-184112.png" alt="not-found"/>
@@ -115,6 +125,11 @@ fetchingCategoriesApi();
 
 
             </div>
+        </div>
+
+        
+
+            }
         </div>
     )
 }
