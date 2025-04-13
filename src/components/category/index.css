@@ -15,6 +15,7 @@
 .add-category-section{
     text-align: right;
     width: 79vw;
+    text-align: right;
 }
 .edit-button{
     background-color: cornflowerblue;
@@ -24,6 +25,9 @@
     margin-bottom: 4px;
     margin-right:4px;
     cursor: pointer;
+    height:24px;
+    width:45px;
+    text-align: center;
 }
 .delete-button{
     background-color: chocolate;
@@ -31,9 +35,13 @@
     border: 0px;
     border-radius: 4px;
     cursor: pointer;
+    height:24px;
+    width:45px;
+    text-align: center;
 }
 @media (max-width:576px){
     .add-category-section{
         width:20vw;
+        text-align: left;
     }
 }

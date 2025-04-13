@@ -49,12 +49,12 @@
 .left-side-nav-bar{
     background-color: rgb(133, 85, 177);
     color: rgb(227, 234, 239);
-
-    height:700px;
     width:120px;
     padding-left:17px;
     padding-top: 44px;
     font-weight: 600;
+    height:100%;
+    min-height: 100vh;
   
     
 }
@@ -73,8 +73,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width:77vw;
-    padding:22px;
+    width:100%;
+    
 
 }
 .empty-list-heading{
@@ -127,7 +127,7 @@
         padding-right:4px;
     }
     .showing-data{
-        width:54vw;
+        width:100%;
     }
    
    
