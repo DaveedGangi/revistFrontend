@@ -116,6 +116,8 @@
     .left-side-nav-bar{
         width: 90px;
         padding-left:4px;
+        font-weight: 400;
+        padding-right:4px;
     }
     .showing-data{
         width:54vw;

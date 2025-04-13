@@ -8,8 +8,32 @@
     color:aliceblue;
     text-align: center;
     padding:5px;
+    margin-right:20px;
+    box-sizing: border-box;
+    margin-bottom:10px;
 }
 .add-category-section{
     text-align: right;
     width: 79vw;
+}
+.edit-button{
+    background-color: cornflowerblue;
+    background-color: aliceblue;
+    border: 0px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    margin-right:4px;
+    cursor: pointer;
+}
+.delete-button{
+    background-color: chocolate;
+    color: aliceblue;
+    border: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+@media (max-width:576px){
+    .add-category-section{
+        width:20vw;
+    }
 }
