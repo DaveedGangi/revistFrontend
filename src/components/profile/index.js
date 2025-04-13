@@ -72,6 +72,7 @@ checkAuth()
             console.log("logout successfully");
             setUsername("");
             history.push("/login")
+            window.location.reload(); 
         }
     }
     catch{
