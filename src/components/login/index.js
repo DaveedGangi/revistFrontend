@@ -26,6 +26,7 @@ function Login(){
         }
         const fetchLogin=await fetch(api,options);
         if(!fetchLogin.ok){
+            setLoading(false);
             setCondition(true);
            const response=await fetchLogin.json();
            console.log(response);
@@ -43,6 +44,7 @@ function Login(){
 
     }
     catch{
+        setLoading(false);
         setMessage("Network error or Server not responding");
     }
     }
