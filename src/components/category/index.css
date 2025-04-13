@@ -14,19 +14,19 @@
 }
 .add-category-section{
     text-align: right;
-    width: 79vw;
+    width: 88vw;
     text-align: right;
 }
 .edit-button{
-    background-color: cornflowerblue;
-    background-color: aliceblue;
+    background-color: rgb(96, 148, 243);
+    color: aliceblue;
     border: 0px;
     border-radius: 4px;
     margin-bottom: 4px;
     margin-right:4px;
     cursor: pointer;
     height:24px;
-    width:45px;
+    width:65px;
     text-align: center;
 }
 .delete-button{
@@ -36,12 +36,6 @@
     border-radius: 4px;
     cursor: pointer;
     height:24px;
-    width:45px;
+    width:65px;
     text-align: center;
-}
-@media (max-width:576px){
-    .add-category-section{
-        width:20vw;
-        text-align: left;
-    }
 }
