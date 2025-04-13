@@ -37,3 +37,9 @@ input{
     margin-top:4px;
     margin-bottom: 5px;
 }
+.allready-account{
+    color:cadetblue;
+}
+.dont-have-account{
+    color:brown;
+}

@@ -7,11 +7,13 @@ function Login(){
     const[password,setPassword]=useState("");
     const[condition,setCondition]=useState(false);
     const[message,setMessage]=useState("");
+    const[loading,setLoading]=useState(false);
 
     const formSubmit=async(e)=>{
         e.preventDefault()
+        setLoading(true);
         
-
+        try{
         const api=condition?"https://revistbackenddaveedgangi.onrender.com/signup" : "https://revistbackenddaveedgangi.onrender.com/login";
         const options={
             method:"POST",
@@ -28,16 +30,31 @@ function Login(){
            const response=await fetchLogin.json();
            console.log(response);
            setMessage(response.message)
+           return;
         }
         else{
             setCondition(false);
             const response=await fetchLogin.json();
+            setLoading(false);
            console.log(response);
            history.replace("/");
 
         }
+
+    }
+    catch{
+        setMessage("Network error or Server not responding");
+    }
     }
 
+    const handlePasswordChange=(e)=>{
+        setPassword(e.target.value);
+        setMessage("");
+    }
+    const handleUsernameChange=(e)=>{
+        setUsername(e.target.value);
+        setMessage("");
+    }
 
 
     return (
@@ -47,14 +64,20 @@ function Login(){
                 <h1 className="login-heading">{condition?"SignUp Page":"Login Page"}</h1>
                 <label name="name">Username</label>
         
-                <input value={username} onChange={(e)=>setUsername(e.target.value)} type="text" placeholder="Enter your name" required/>
+                <input value={username} onChange={handleUsernameChange} type="text" placeholder="Enter your name" required/>
                 <br/>
                 <label name="password">Password</label>
-                <input value={password} onChange={(e)=>setPassword(e.target.value)} type="password" placeholder="Enter your password" required/>
+                <input value={password} onChange={handlePasswordChange} type="password" placeholder="Enter your password" required/>
                 <br/>
                 <p>{message}</p>
                 
-                <button className="login-button" type="submit">{condition?"SignUp":"Login"}</button>
+                <button disabled={loading} className="login-button" type="submit">{loading?"Please wait...":condition?"Sign Up":"Login"}</button>
+                {condition?
+                <p className="allready-account">Already have an account? <span onClick={()=>setCondition(false)}  id="showLoginForm">Login</span></p>
+                :
+                <p className="dont-have-account">Don't have an account? <span  onClick={()=>setCondition(true)} id="showRegisterForm">Register</span></p>
+                }
+            
             </form>
         </div>
     )
